@@ -125,91 +125,16 @@
           </div>
           <div class="exploration-content">
             <p style="color: var(--silver); margin-bottom: 1rem;">
-              I'm learning MS Paint at school and making flags of different countries! Here are my <span id="flagCount">19</span> flag creations:
+              I'm learning MS Paint at school and making flags of different countries! Here are my <span id="flagCount">{{FLAG_COUNT}}</span> flag creations:
             </p>
             <div class="flags-carousel-container">
               <button class="flag-carousel-btn prev" onclick="moveFlags(-1)" id="flagPrevBtn">◀</button>
               <div class="flags-showcase" id="flagsShowcase">
-                <div class="flag-item" onclick="openFlagModal('flags/austria.png', 'Austria')">
-                <img src="flags/austria.png" alt="Austria">
-                <span class="flag-name">Austria</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/bangladesh.png', 'Bangladesh')">
-                <img src="flags/bangladesh.png" alt="Bangladesh">
-                <span class="flag-name">Bangladesh</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/BRAZIL.png', 'Brazil')">
-                <img src="flags/BRAZIL.png" alt="Brazil">
-                <span class="flag-name">Brazil</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/chad.png', 'Chad')">
-                <img src="flags/chad.png" alt="Chad">
-                <span class="flag-name">Chad</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/chile.png', 'Chile')">
-                <img src="flags/chile.png" alt="Chile">
-                <span class="flag-name">Chile</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/china.png', 'China')">
-                <img src="flags/china.png" alt="China">
-                <span class="flag-name">China</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/colombiA.png', 'Colombia')">
-                <img src="flags/colombiA.png" alt="Colombia">
-                <span class="flag-name">Colombia</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/gabon.png', 'Gabon')">
-                <img src="flags/gabon.png" alt="Gabon">
-                <span class="flag-name">Gabon</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/hondurus.png', 'Honduras')">
-                <img src="flags/hondurus.png" alt="Honduras">
-                <span class="flag-name">Honduras</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/INDIA.png', 'India')">
-                <img src="flags/INDIA.png" alt="India">
-                <span class="flag-name">India</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/japan.png', 'Japan')">
-                <img src="flags/japan.png" alt="Japan">
-                <span class="flag-name">Japan</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/laos.png', 'Laos')">
-                <img src="flags/laos.png" alt="Laos">
-                <span class="flag-name">Laos</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/mali.png', 'Mali')">
-                <img src="flags/mali.png" alt="Mali">
-                <span class="flag-name">Mali</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/nigeria.png', 'Nigeria')">
-                <img src="flags/nigeria.png" alt="Nigeria">
-                <span class="flag-name">Nigeria</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/palau.png', 'Palau')">
-                <img src="flags/palau.png" alt="Palau">
-                <span class="flag-name">Palau</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/PHILAPIENS.png', 'Philippines')">
-                <img src="flags/PHILAPIENS.png" alt="Philippines">
-                <span class="flag-name">Philippines</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/somailia.png', 'Somalia')">
-                <img src="flags/somailia.png" alt="Somalia">
-                <span class="flag-name">Somalia</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/uae.png', 'UAE')">
-                <img src="flags/uae.png" alt="UAE">
-                <span class="flag-name">UAE</span>
-              </div>
-              <div class="flag-item" onclick="openFlagModal('flags/vietnam.jpeg', 'Vietnam')">
-                <img src="flags/vietnam.jpeg" alt="Vietnam">
-                <span class="flag-name">Vietnam</span>
-              </div>
+                <!-- {{FLAGS_PLACEHOLDER}} - Generated by build-flags.js -->
               </div>
               <button class="flag-carousel-btn next" onclick="moveFlags(1)" id="flagNextBtn">▶</button>
               <div class="flags-carousel-info">
-                <span id="flagPageInfo">Showing 1-6 of 19</span>
+                <span id="flagPageInfo">Showing 1-6 of {{FLAG_COUNT}}</span>
               </div>
             </div>
             <div class="ms-paint-badge">
